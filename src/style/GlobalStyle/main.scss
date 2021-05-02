@@ -1,1 +1,82 @@
 @import "../scss/bootstrap.scss";
+$sidebar: #1e1e2d;
+$bg-content: #3699ff;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+
+   STYLE   SIDEBAR
+
+*/
+.sidebar {
+  width: 25%;
+  background-color: $sidebar;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 1px solid gold;
+  &-brand {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 9px;
+  }
+  .fa {
+    font-size: 13px;
+  }
+}
+
+/*
+
+     STYLE NAVBAR
+
+*/
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $sidebar;
+  color: white;
+  width: 75%;
+
+  &-info {
+    .fa {
+      font-size: 1.2em;
+      margin-right: 36px;
+      color: #9accfd;
+      position: relative;
+
+      .count-envelope {
+        position: absolute;
+        top: 5px;
+        background: white;
+        font-size: 12px;
+        left: 11px;
+        color: red;
+        border-radius: 50%;
+        letter-spacing: 0px;
+        padding: 1px;
+      }
+      .count-notification {
+        position: absolute;
+        top: 5px;
+        background: white;
+        font-size: 12px;
+        left: 11px;
+        color: red;
+        border-radius: 50%;
+        letter-spacing: 0px;
+        padding: 1px;
+      }
+    }
+  }
+  &-profile {
+    img {
+      width: 40px;
+      border-radius: 5px;
+    }
+  }
+}

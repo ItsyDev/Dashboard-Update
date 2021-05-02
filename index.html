@@ -8,14 +8,55 @@
           <link rel="stylesheet" href="src/style/GlobalStyle/main.css">
           <!-- ( ICONS ) Font Awesome  -->
           <link rel="stylesheet" href="src/assets/icons/fontawesome/css/all.css">
+          <!-- (Font Poppins ) -->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"
+               rel="stylesheet">
           <title>ITSYDashboardV2</title>
      </head>
 
-     <body>
+     <body class="bg-content" style="height: 100vh;">
+          <section class="container-dashboard d-flex justify-content-between align-items-strech">
+
+               <!-- SIDEBAR -->
+               <div class="sidebar">
+                    <h1 class="sidebar-brand ">IT'S SO EASY</h1>
+                    <i class="fa fa-chevron-circle-right fa-spin" aria-hidden="true"></i>
+               </div>
+               <!-- END SIDEBAR  -->
+
+
+               <!-- NAVBAR  -->
+               <nav class="navbar">
+                    <div class="navbar-info">
+                         <i class="fa fa-envelope" aria-hidden="true">
+                              <span class="count-envelope">12</span>
+                         </i>
+                         <i class="fa fa-bell" aria-hidden="true">
+                              <span class="count-notification">12</span>
+                         </i>
+                         <i class="fa fa-flag" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="navbar-profile">
+                         <span class="mr-2">Hi, <b>Naufal</b></span>
+                         <img src="src/assets/images/fall.jpg" class="navbar-img" alt="profile">
+                    </div>
+
+               </nav>
+               <!-- END NAVBAR  -->
+
+
+
+          </section>
+
 
           <!-- jQuery and Bootstrap Bundle (includes Popper) -->
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+               crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+               integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
                crossorigin="anonymous"></script>
      </body>
 
