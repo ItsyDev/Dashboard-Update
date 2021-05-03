@@ -9938,23 +9938,32 @@ body {
 
 */
 .sidebar {
-  width: 25%;
+  position: relative;
+  width: 15%;
   background-color: #1e1e2d;
   color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-right: 1px solid gold;
+  padding: 0 5px;
+  height: 100vh;
 }
 .sidebar-brand {
   font-weight: 700;
   font-size: 14px;
   margin-top: 9px;
+  text-align: center;
 }
-.sidebar .fa {
-  font-size: 13px;
+.sidebar .fa-chevron-circle-right {
+  position: absolute;
+  left: 87%;
+  top: 50%;
+  z-index: 1;
+  font-size: 19px;
+  cursor: pointer;
+  color: darkgoldenrod;
+  background: gold;
+  border: 1px solid gold;
+  border-radius: 50%;
 }
-
 /*
 
      STYLE NAVBAR
@@ -9966,25 +9975,15 @@ body {
   align-items: center;
   background-color: #1e1e2d;
   color: white;
-  width: 75%;
+  width: 85%;
 }
 .navbar-info .fa {
   font-size: 1.2em;
-  margin-right: 36px;
+  margin-right: 26px;
   color: #9accfd;
   position: relative;
 }
-.navbar-info .fa .count-envelope {
-  position: absolute;
-  top: 5px;
-  background: white;
-  font-size: 12px;
-  left: 11px;
-  color: red;
-  border-radius: 50%;
-  letter-spacing: 0px;
-  padding: 1px;
-}
+.navbar-info .fa .count-envelope,
 .navbar-info .fa .count-notification {
   position: absolute;
   top: 5px;
