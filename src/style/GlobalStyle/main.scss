@@ -4,6 +4,7 @@ $bg-content: #3699ff;
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #e7e9f1;
 }
 
 /*
@@ -38,8 +39,6 @@ body {
     border: 1px solid gold;
     border-radius: 50%;
   }
-  &-list {
-  }
 }
 
 /*
@@ -51,28 +50,51 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: $sidebar;
+  background-color: white;
   color: white;
   width: 85%;
 
   &-info {
-    .fa {
-      font-size: 1.2em;
-      margin-right: 26px;
-      color: #9accfd;
-      position: relative;
+    position: relative;
 
-      .count-envelope,
-      .count-notification {
-        position: absolute;
-        top: 5px;
-        background: white;
-        font-size: 12px;
-        left: 11px;
-        color: red;
-        border-radius: 50%;
-        letter-spacing: 0px;
-        padding: 1px;
+    .navbar-search {
+      position: absolute;
+      left: -218px;
+      top: 2px;
+      border-radius: 5px;
+      outline: none;
+    }
+    .icon-search {
+      position: absolute;
+      right: 152px;
+      top: 7px;
+      max-width: 20px;
+      cursor: pointer;
+    }
+
+    img {
+      display: inline-block;
+      max-width: 35px;
+      margin-right: 11px;
+      color: #3699ff;
+    }
+    .count {
+      position: absolute;
+      top: 5px;
+      background: black;
+      font-size: 10px;
+      left: 11px;
+      color: white;
+      border-radius: 50%;
+      padding: 2px;
+
+      &-envelope {
+        top: -2px;
+        left: 17%;
+      }
+      &-notification {
+        top: -2px;
+        left: 48%;
       }
     }
   }
