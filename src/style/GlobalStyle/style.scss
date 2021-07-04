@@ -1,0 +1,363 @@
+body{
+
+
+     font-family: 'Poppins';
+
+}
+$font_paint: #9ea1ae;
+$sidebar-paint: #1e1e2d;
+#Dash_board {
+  display: flex;
+  background: #e7e9f1;
+}
+
+h6 {
+  margin-left: 1rem;
+  color: #494b74;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+// ============================= TODOLIST  VARIAN  ========================
+.container_todo_value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .alert {
+    width: 50%;
+    .item_input {
+      width: 60%;
+    }
+    .btn-info {
+      display: inline-block;
+    }
+  }
+}
+// element id di beri pada  file script.js
+#new_id_varian {
+  margin-top: 30px;
+  .font-weight-bold {
+    position: relative;
+
+    span {
+      position: absolute;
+      left: 98%;
+      top: -4%;
+      font-weight: bolder;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+// =============================Responsive Page ========================
+@media (max-width: 992px) {
+  // ============================================= Navigation user  =============================
+  .navbar {
+    .container-fluid {
+      padding: 0;
+      margin: 0;
+      flex-direction: column-reverse;
+      justify-content: start;
+      align-items: end;
+      flex-wrap: nowrap;
+
+      form {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+        img.search_input {
+          left: 90%;
+        }
+      }
+
+      .menu_bar_profile {
+        ul.navbar-nav {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  // ============================================= Navigation sidebar =============================
+  .navigation {
+    transition: all 0.56s ease-in-out;
+    width: 80px !important;
+  }
+  .show_sidebars {
+    width: 300px !important;
+    ul h6,
+    .accordion span.title span {
+      transform: scale(0);
+      transition: all 0.56s ease-in-out;
+    }
+  }
+}
+
+.spesifikas_produk {
+  h6 {
+    margin-left: 0 !important;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 552px) {
+  #add_ui_varian {
+    .col-auto {
+      width: 100%;
+    }
+  }
+  .status {
+    &-saldo,
+    &-total_order {
+      border-bottom: 1px solid lightblue;
+      margin-bottom: 10px;
+    }
+  }
+  .menu_bar_profile {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// =================================== sidebar
+
+.sidebar {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: #1e1e2d;
+
+  .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    padding: 5px;
+    background-color: #1e1e2d;
+    color: white;
+    border-bottom: none;
+    h5 {
+      font-weight: 700;
+    }
+  }
+}
+
+.containers {
+  position: relative;
+
+  .navigation {
+    position: relative;
+    width: 275px;
+
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+
+    ul {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        list-style: none;
+        width: 100%;
+
+        &:hover {
+          background: #3d3d71;
+          span.title {
+            color: white !important;
+          }
+        }
+
+        a {
+          position: relative;
+          display: block;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: stretch;
+          text-decoration: none;
+          span.icons {
+            position: relative;
+            display: block;
+            min-width: 80px;
+            height: 60px;
+            line-height: 47px;
+            text-align: center;
+
+            svg,
+            img {
+              width: 30px;
+            }
+          }
+
+          span.title {
+            position: relative;
+            display: block;
+            height: 60px;
+            line-height: 50px;
+            white-space: nowrap;
+            color: #9ea1ae;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.marketplace,
+.account {
+  margin-top: 44px;
+}
+
+.accordion {
+  white-space: nowrap;
+  h6 {
+    color: #3d3d71;
+    font-size: 16px;
+    margin: 44px 1rem 0;
+  }
+
+  .accordion-button {
+    background-color: inherit;
+    margin-top: 10px;
+    color: #9ea1ae;
+    &::after {
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  .accordion-body {
+    a {
+      list-style-type: disc;
+      color: #9ea1ae;
+      font-size: 15px;
+      margin-left: 60px;
+      text-decoration: none;
+      &:hover {
+        color: #3699ff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: 35%;
+  left: 93%;
+  width: 40px;
+  height: 40px;
+  background: #ffff;
+  border: 5px solid #3d3d71;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+
+
+}
+
+// animation in js classlist | toggle
+
+
+.navigation.show_sidebars {
+  width: 80px;
+}
+
+
+
+
+
+
+
+//  Navbar Main CONTENT
+.navbar_main_content {
+  .navbar {
+    background-color: white;
+    color: black;
+    .navbar-brand {
+      align-items: center;
+      font-weight: 500;
+      span {
+        font-size: 18px;
+        margin-right: 20px;
+        font-weight: 700;
+      }
+      img {
+        height: 35px;
+        border-radius: 5px;
+      }
+    }
+
+    .nav-item {
+      .nav-link {
+        position: relative;
+        .count_ {
+          width: 18px;
+          height: 18px;
+          font-size: 9px;
+          color: white;
+          background-color: black;
+          text-align: center;
+          font-weight: bold;
+          line-height: 17px;
+          border-radius: 50%;
+        }
+        .count_notification {
+          position: absolute;
+          top: 51%;
+          left: 63%;
+        }
+        .count_message {
+          position: absolute;
+          top: -3%;
+          left: 63%;
+        }
+      }
+    }
+  }
+}
+
+
+// form
+.navbar_main_content form {
+  position: relative;
+  input {
+    width: 343px;
+    border-radius: 5px;
+    background: #e7e9f1;
+  }
+  .search_input {
+    position: absolute;
+    left: 90%;
+    top: 28%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+
+}
+
+// ============================================== BODY CONTENT DASHBOARD =======================================
+
+.Content_dashboard {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+
+
