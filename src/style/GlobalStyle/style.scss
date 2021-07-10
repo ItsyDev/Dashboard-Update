@@ -1,8 +1,18 @@
+@import './_Variabel';
+// change bg card bootstrap dengan bg custom in __variabel.scss
+.breadcrumb {
+ background-color: $background-dark-card !important;
+
+}
+.card,.breadcrumb {
+ background-color: $background-dark-sidebar  ;
+ border: 1px solid white;
+ color: white ;
+
+}
+
 body{
-
-
      font-family: 'Poppins';
-
 }
 $font_paint: #9ea1ae;
 $sidebar-paint: #1e1e2d;
@@ -130,7 +140,7 @@ h6 {
   display: flex;
   position: relative;
   flex-direction: column;
-  background: #1e1e2d;
+  background: #3E3E4F;
 
   .card-header {
     display: flex;
@@ -138,7 +148,7 @@ h6 {
     align-items: center;
     height: 75px;
     padding: 5px;
-    background-color: #1e1e2d;
+    background-color: #3E3E4F;
     color: white;
     border-bottom: none;
     h5 {
@@ -282,9 +292,11 @@ h6 {
 
 //  Navbar Main CONTENT
 .navbar_main_content {
+  background-color: #1E1E2D;
   .navbar {
-    background-color: white;
-    color: black;
+    background-color: $background-dark-card;
+    color: white;
+    border-bottom:  1px solid white;
     .navbar-brand {
       align-items: center;
       font-weight: 500;

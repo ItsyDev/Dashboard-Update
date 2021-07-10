@@ -212,7 +212,7 @@
 
                <div class="navbar_main_content  w-100 ">
                     <!-- ======================================== Navbar Profile ========================================= -->
-                    <nav class="navbar navbar-expand-md  justify-content-center">
+                    <nav class="navbar navbar-expand-md  justify-content-center pb-4">
                          <div class="container-fluid">
                               <form class="d-flex">
                                    <input class="form-control me-2" type="search" placeholder="Search"
@@ -222,32 +222,8 @@
 
 
                               <!-- Image user  and name user  -->
-                              <div class="menu_bar_profile d-flex justify-content-evenly w-100">
-                                   <ul class="navbar-nav mr-5 ml-auto mb-2 mb-lg-0 align-items-center ">
-
-                                        <li class="nav-item mr">
-                                             <a class="nav-link active " aria-current="page" href="#">
-                                                  <img src="./chat.png" alt="message" width="45" height="42">
-                                                  <span class="count_ count_message">12</span>
-                                             </a>
-                                        </li>
-                                        <li class="nav-item mr">
-                                             <a class="nav-link " href="#">
-                                                  <img src="Bell.png" alt="notification" width="42" height="42">
-                                                  <span class="count_ count_notification ">12</span>
-                                             </a>
-                                        </li>
-
-                                        <li class="nav-item mr">
-                                             <a class="nav-link active " aria-current="page" href="#">
-                                                  <img src="./country.png" alt="country" width="44">
-                                             </a>
-                                        </li>
-
-
-
-                                   </ul>
-                                   <a class="navbar-brand text-muted" href="#">
+                              <div class="menu_bar_profile d-flex justify-content-end w-100 border-white">
+                                   <a class="navbar-brand text-white" href="#">
                                         Hi,
                                         <span>
                                              Fall</span>
@@ -262,21 +238,20 @@
 
                     <!-- ======================================== content dashboard  ========================================= -->
                     <main class="Content_dashboard    m-xl-3 m-lg-3 m-md-3 ms-sm-2  ">
-                         <!-- Edit form select opiton  -->
-                         <div
-                              class="card-header h4 text-muted bg-white d-flex justify-content-between align-items-center">
-                              Dashboard
+                         <nav aria-label="breadcrumb">
+                              <ol class="breadcrumb">
+                                   <li class="breadcrumb-item active text-white" aria-current="page">Dashboard</li>
+                              </ol>
+                         </nav>
+                         <div class="card">
 
-                              <form>
-                                   <select class="form-control bg-white">
-                                        <option>Bulan ini</option>
-                                        <option>Minggu ini </option>
-                                        <option>3 Bulan</option>
-                                        <option>6 Bulan</option>
-                                        <option>Tahun Ini</option>
-                                        <option>Custom</option>
-                                   </select>
-                              </form>
+                              <div class="card-body">
+                                   <h5 class="card-title">Card title</h5>
+                                   <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                                   <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                   b5
+                              </div>
                          </div>
                     </main>
                </div>
